@@ -1,0 +1,13 @@
+<!--pages/footer.wxml-->
+<view class="footer">
+    <view>
+    <view>
+      <image src="../img/b.png"></image>
+    </view>
+      <text>￥0</text>
+      <text>另需配送费￥4元</text>
+    </view>
+    <view>
+      ￥20起送
+    </view>
+</view>

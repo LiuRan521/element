@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "componentB": "../assess/assess",
+    "footer":"../footer/footer",
+    "goods":"../goods/goods",
+    "vstore":"../store/store"
+  }
+}

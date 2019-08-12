@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+  <!-- 头部顶部 -->
+    <view>
+        <view>
+          <image src="../img/a.png"></image>
+        </view>
+        <view>
+          <view>
+               <text>品牌</text>
+               <text>粥品香坊(大运村)</text>
+          </view>
+          <view>蜂鸟专送/38分钟送达</view>
+          <view>
+              <image src="../img/decrease_1@2x.png"></image>
+              <text>在线支付满28减5，满50减10</text>
+              <text>5个 > </text>
+          </view> 
+        </view>
+    </view>
+    <!-- 公告部分 -->
+    <view class="news">
+      <text>公告</text>
+      <text>粥品香坊其烹饪粥料的秘方源于中国千年古法，再融合现代制作工艺...</text>
+      <text>></text>
+    </view>
+    <!-- 跳转路由 -->
+        <view class="menu_box">
+              <text class='menu1 {{menuTapCurrent=="0"?"borders":""}}' data-current="0" catchtap="menuTap">商品               </text>
+              <text class='menu2 {{menuTapCurrent=="1"?"borders":""}}' data-current="1" catchtap="menuTap">评价               </text>
+              <text class='menu3 {{menuTapCurrent=="2"?"borders":""}}' data-current="2" catchtap="menuTap">商家               </text>
+        </view>
+      
+  </view>
+  <view id="content">
+      <view class="tab1" hidden="{{menuTapCurrent!='0'}}">
+          <goods></goods>
+      </view>
+      <!--评价  -->
+      <view class="tab2" hidden="{{menuTapCurrent!='1'}}">
+          <componentB></componentB>
+      </view>
+      <!-- 商家 -->
+      <view class="tab2" hidden="{{menuTapCurrent!='2'}}">
+          <!-- <import src="../store/store"/> -->
+          <!-- <template is="store" bind:storeData="storeData"></template> -->
+          <vstore storeData="{{storeData}}"></vstore>
+      </view>
+</view>
+
+  <view id="footer">
+      <footer></footer>
+  </view>
+</view>

@@ -1,0 +1,31 @@
+<view id="goods">
+    <view style="display:flex">
+         <view class="type">
+        <view wx:for="{{list}}" data-item="item" wx:for-index="idx" >
+        <view >
+            {{item.name}}
+        </view>
+        </view>
+    </view>
+    <view class="content">
+        <view wx:for="{{list}}" data-item="item" wx:for-index="idx" >
+          <view wx:for="{{item.foods}}" wx:for-item="val" wx:key="" >
+            <view>
+              <image src="{{val.icon}}"></image>
+            </view>
+            <view class="food">
+              <view>{{val.name}}</view>
+              <view>{{val.description}}</view>
+              <view>
+                <text>月售{{val.sellCount}}</text>
+                <text>好评率{{val.rating}}%</text>
+              </view>
+              <view>
+                <text>￥{{val.price}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+    </view>
+    </view>
+</view>

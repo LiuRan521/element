@@ -1,0 +1,43 @@
+/* pages/footer.wxss */
+.footer{
+  width: 100%;
+  line-height: 95rpx;
+  background: #131D26;
+  display: flex;
+  justify-content: space-between;
+}
+.footer view:nth-of-type(1){
+  display: flex;
+}
+.footer view:nth-of-type(1)>view:nth-of-type(1){
+  border-radius: 50%;
+  width: 88rpx;
+  height: 80rpx;
+  background: #2B343C;
+  text-align: center;
+  border: 15rpx solid #131D26;
+  margin-top: -20rpx;
+  margin-left: 36rpx;
+  z-index: 100;
+}
+.footer view:nth-of-type(1) text{
+  color: #919396;
+}
+.footer view:nth-of-type(1) text:nth-of-type(1){
+  font-weight: 600;
+  margin-right: 30rpx;
+  border-right: 3px soild #919396;
+}
+.footer view:nth-of-type(1) image{
+  width: 50rpx;
+  height: 50rpx;
+  padding-top: 15rpx;
+  margin-left: 20rpx;
+}
+.footer view:nth-of-type(2){
+  width: 210rpx;
+  text-align: center;
+  background: #2B333B;
+  font-weight: 600;
+  color: #979A9C;
+}

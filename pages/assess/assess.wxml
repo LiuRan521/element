@@ -1,0 +1,74 @@
+<view class="assess">
+  <view>
+    <view class="left">
+      <text>3.9</text>
+      <text>综合评分</text>
+      <text>高于周边商家69.2%</text>
+    </view>
+    <view class="right">
+      <view>
+        <text>服务态度</text>
+        <view>
+             <image src="../img/star36_on@2x.png"></image>
+            <image src="../img/star36_on@2x.png"></image>
+            <image src="../img/star36_on@2x.png"></image>
+             <image src="../img/star36_on@2x.png"></image>
+             <image src="../img/star36_off@2x.png"></image>
+        </view>
+        <text>3.9</text>
+      </view>
+      <view>
+        <text>服务态度</text>
+        <view>
+             <image src="../img/star36_on@2x.png"></image>
+            <image src="../img/star36_on@2x.png"></image>
+            <image src="../img/star36_on@2x.png"></image>
+             <image src="../img/star36_on@2x.png"></image>
+             <image src="../img/star36_off@2x.png"></image>
+        </view>
+        <text>4.0</text>
+      </view>
+      <view>
+        <text>送达时间</text>
+        <text>44分钟</text>
+      </view>
+    </view>
+  </view>
+  <view class="shadow"></view>
+  <view class="all">
+    <view>
+      <text>全部</text>
+      <text>满意</text>
+      <text>不满意</text>
+    </view>
+    <view>只看有内容的评价</view>
+  </view>
+  <view class="content">
+    <view class='item' wx:for="{{goods}}" wx:key="{{i}}" wx:for-index="Gindex">
+      <view>
+          <image src="{{item.avatar}}"></image>
+      </view>
+      <view>
+          <view class="one">
+              <text>{{item.username}}</text>
+              <text>{{item.rateTime}}</text>
+          </view>
+          <view>
+             <image src="../img/star36_on@2x.png"></image>
+             <image src="../img/star36_on@2x.png"></image>
+             <image src="../img/star36_on@2x.png"></image>
+             <image src="../img/star36_on@2x.png"></image>
+             <image src="../img/star36_off@2x.png"></image>
+             <text>{{item.deliveryTime}}分钟送达</text>
+          </view>
+          <view>{{item.text}}</view>
+          <view>
+            <text wx:if="{{item.rateType===0}}">点赞</text>
+            <text wx:if="{{item.rateType===1}}">踩赞</text>
+             <text class="food" wx:for="{{item.recommend}}" wx:key="{{i}}" wx:for-item="twodata">{{twodata}}</text>
+          </view>
+          
+      </view>
+    </view>
+  </view>
+</view>

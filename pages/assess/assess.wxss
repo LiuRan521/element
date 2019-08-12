@@ -1,0 +1,156 @@
+/* pages/assess/assess.wxss */
+.assess{
+  width: 100%;
+  height: 215rpx;
+  border-bottom: 1px solid lightgray;
+}
+.assess>view:nth-of-type(1){
+  width: 100%;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 30rpx;
+}
+.assess>view .left{
+  width: 35%;
+  height: 100%;
+  text-align: center;
+  border-right: 1px solid lightgrey;
+}
+.assess>view .left text{
+  display: block;
+}
+.assess>view .left text:nth-of-type(3){
+  font-size: 20rpx;
+  color: rgb(7, 17,27);
+  line-height: 20rpx;
+}
+.assess>view .left text:nth-of-type(1){
+  font-size: 48rpx;
+  color: rgb(255, 153,0);
+  line-height: 56rpx;
+}
+.assess>view .left text:nth-of-type(2){
+  font-size: 24rpx;
+  color: rgb(7, 17,27);
+  line-height: 24rpx;
+  margin-top: 12rpx;
+  margin-bottom: 16rpx;
+}
+.assess>view .right{
+   width: 65%;
+  height: 100%;
+}
+.right>view{
+  display: flex;
+  margin-left: 48rpx;
+  font-size: 24rpx;
+}
+.right>view image{
+  width: 36rpx;
+  height: 36rpx;
+}
+.right>view:nth-of-type(2){
+ margin-top: 16rpx;
+ margin-bottom: 16rpx;
+}
+.right>view>view{
+  margin-left: 24rpx;
+  margin-right: 24rpx;
+}
+.right>view text:nth-of-type(2){
+  color: rgb(255, 153, 0);
+  font-size: 24rpx;
+}
+.right>view:nth-last-of-type(1) text:nth-of-type(2){
+  margin-left: 24rpx;
+  color: rgb(147, 153, 159)
+}
+.shadow{
+  width: 100%;
+  height: 35rpx !important;
+  background:lightgray;
+}
+.content{
+  width: 100%;
+}
+.content>view{
+  display: flex;
+  box-sizing: border-box;
+  padding: 36rpx;
+  border-bottom: 1px solid lightgray;
+}
+.content>view>view:nth-of-type(1){
+  margin-right: 24rpx;
+}
+.content>view>view:nth-of-type(1) image{
+  width: 58rpx;
+  height: 58rpx;
+  border-radius: 50%;
+}
+.one{
+  margin-top: 8rpx;
+  margin-bottom: 12rpx;
+}
+ .one text:nth-of-type(2){
+    margin-left: 270rpx;
+    color: rgb(147, 153, 159);
+    font-weight: 200;
+
+}
+.content>view>view:nth-of-type(2) view:nth-of-type(2) image{
+  width: 36rpx;
+  height: 36rpx;
+}
+.content>view>view:nth-of-type(2) view:nth-of-type(2) text{
+  color: rgb(147, 153, 159);
+  margin-left: 12rpx;
+   font-weight: 200;
+}
+.content>view>view:nth-of-type(2) view:nth-of-type(3){
+ margin-top: 6rpx;
+ margin-bottom: 16rpx;
+}
+.food{
+  border: 1px solid lightgray;
+  margin-left: 16rpx;
+  color: lightgray;
+  font-size: 25rpx;
+  padding:5rpx 12rpx;
+  margin-bottom: 10rpx !important;
+}
+.all{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 36rpx;
+  border-bottom: 1px solid lightgray;
+}
+.all>view:nth-of-type(1){
+  padding-bottom: 36rpx;
+  border-bottom: 1px solid lightgray;
+}
+.all>view:nth-of-type(1) text{
+  margin-left: 25rpx;
+}
+.all>view:nth-of-type(1) text:nth-of-type(1){
+  color: white;
+  background: #00A0DC;
+  padding: 20rpx 36rpx;
+  border-radius: 5rpx;
+}
+.all>view:nth-of-type(1) text:nth-of-type(2){
+  color: #4D555D;
+  background: #CCECF8;
+  padding: 20rpx 36rpx;
+  border-radius: 5rpx;
+}
+.all>view:nth-of-type(1) text:nth-of-type(3){
+  color: #4D555D;
+  background: #E9EBEC;
+  padding: 20rpx 36rpx;
+  border-radius: 5rpx;
+}
+.all>view:nth-of-type(2){
+  margin-top: 36rpx;
+  color: #93999F;
+}

@@ -1,0 +1,66 @@
+/* pages/goods/goods.wxss */
+#goods{
+  width: 100%;
+  height: 100%;
+}
+#goods>view{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.type{
+  width: 25%;
+}
+.content{
+  width: 75%;
+}
+.content>view>view{
+    display: flex;
+    box-sizing: border-box;
+    padding: 36rpx;
+    border-bottom: 1px solid rgb(7,17,27,0.1)
+}
+.content>view>view image{
+  width: 115rpx;
+  height: 115rpx;
+}
+.food{
+  margin-left: 20rpx;
+}
+.food view:nth-of-type(1){
+  font-size: 28rpx;
+  color: rgb(7,17,27)
+}
+.food view:nth-of-type(2){
+  font-size: 20rpx;
+  color: rgb(147,153,159);
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.food view:nth-of-type(3){
+  font-size: 20rpx;
+  color: rgb(147,153,159);
+}
+.food view:nth-of-type(3) text:nth-of-type(1){
+  margin-right: 25rpx;
+}
+.food view:nth-of-type(4){
+ font-weight: 700;
+  font-size: 28rpx;
+  color: red;
+  margin-top: 10rpx;
+}
+
+.type{
+  box-sizing: border-box;
+  background:#F3F5F7;
+}
+.type>view{
+  width: 100%;
+  height: 130rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #DBDEE1;
+  box-sizing: border-box;
+  padding: 24rpx;
+}
